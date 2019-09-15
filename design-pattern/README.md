@@ -34,4 +34,10 @@
 10. Strategy 패턴
     - Strategy 인터페이스를 통해 느슨하게 연결하고 알고리즘을 쉽게 교환할 수 있다
     - 알고리즘이 변경될 경우에 Strategy 인터페이스를 구현한 클래스에서만 변경하므로 변경 범위가 적다
-    - 동적으로 알고리즘 교체 가능  
+    - 동적으로 알고리즘 교체 가능
+11. Composite 패턴
+    - 동일한 인터페이스를 통해 복합 객체와 단일 객체를 클라이언트 입장에서 구별 없이 사용할 수 있다
+    - Component는 Leaf와 Composite 클래스의 공통 인터페이스 정의
+    - Leaf는 Component 구현 클래스이며, Composite 클래스의 부품으로 사용
+    - Composite는 Component 구현 클래스이며, 복수 개의 Component를 가지고 있다
+    - 재귀적인 구조 (트리 구조)로 된 데이터 구조는 Composite 패턴에 해당한다
