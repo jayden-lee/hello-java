@@ -56,3 +56,9 @@
     - ConcreteComponent 객체의 내용을 변경하지 않고 새로운 기능을 추가할 수 있다
     - Decorator는 자신이 장식할 구성요소(Component)와 같은 인터페이스를 구현한다
     
+13. Visitor 패턴
+    - 데이터 구조와 처리를 분리한다
+    - Vistor(방문자) 클래스는 방문하는 데이터 구조에 의존한다
+    - Element는 Visitor를 <code>accept</code>하고, Visitor는 Element를 <code>visit</code>한다
+    - Visitor 패턴은 처리(로직)을 데이터 구조에서 분리할 수 있으므로 유연한 장점이 있다
+    - [JSQLParser](https://github.com/JSQLParser/JSqlParser)는 Visitor 패턴을 사용해서 SQL 구문이 파싱된 계층 결과를 탐색한다
