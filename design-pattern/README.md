@@ -62,3 +62,12 @@
     - Element는 Visitor를 <code>accept</code>하고, Visitor는 Element를 <code>visit</code>한다
     - Visitor 패턴은 처리(로직)을 데이터 구조에서 분리할 수 있으므로 유연한 장점이 있다
     - [JSQLParser](https://github.com/JSQLParser/JSqlParser)는 Visitor 패턴을 사용해서 SQL 구문이 파싱된 계층 결과를 탐색한다
+    
+14. Chain of Responsibility 패턴
+    - 복수의 오브젝트(객체)를 사슬(chain)처럼 연결하면, 오브젝트의 사슬을 차례로 돌아다니면서 목적한 오브젝트를 결정하는 방법이다
+    - Handler, ConcreteHandler, Client 3개의 클래스가 등장한다
+    - Handler는 요구를 처리하는 인터페이스를 결정하는 역할을 담당한다
+    - ConcreteHandler는 요구를 처리하는 구체적인 역할을 담당한다
+    - Client는 ConcreteHandler 역할에 요구(요청)을 하는 일을 담당한다
+    - Chain of Responsibility 패턴은 요구하는 객체와 요구를 처리하는 객체를 유연하게 연결하는 것이 특징이다
+    
