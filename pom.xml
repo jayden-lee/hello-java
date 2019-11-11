@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>design-pattern</module>
+        <module>java-study</module>
     </modules>
 
     <name>hello-java</name>
