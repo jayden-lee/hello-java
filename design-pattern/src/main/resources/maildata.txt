@@ -1,0 +1,4 @@
+jayden@chequer.io=Jayden
+gwanggi.lee@gmail.com=Lee
+park@kakao.com=Park
+kim@kakao.com=Kim
