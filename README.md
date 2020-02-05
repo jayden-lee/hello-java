@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.io/jayden-lee/hello-java.svg)](http://hits.dwyl.io/jayden-lee/hello-java)
+
 # Hello Java
 > Java Example Collection Repository
 
