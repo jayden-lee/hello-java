@@ -5,6 +5,7 @@
 
 ## Generic Java Example
 - [Java Example](https://github.com/jayden-lee/hello-java/tree/master/java-study)
+- [Java ORM JPA Programming](https://github.com/jayden-lee/hello-orm-jpa-programming)
 - [Java Test Example](https://github.com/jayden-lee/hello-java-test)
 - [Design Pattern](https://github.com/jayden-lee/hello-java/tree/master/design-pattern)
 - [Effective Java](https://github.com/junior-study/effective-java-study)
