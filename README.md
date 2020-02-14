@@ -23,3 +23,4 @@
 - [Spring Boot and GraphQL](https://github.com/jayden-lee/spring-boot-graphql)
 - [Spring Boot with JSP](https://github.com/jayden-lee/springboot-jsp)
 - [Spring Boot and JPA 활용](https://github.com/jayden-lee/hello-spring-jpa-shop)
+- [Spring Data JPA](https://github.com/jayden-lee/hello-spring-data-jpa)
