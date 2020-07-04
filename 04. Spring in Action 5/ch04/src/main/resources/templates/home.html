@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring in Action 5</title>
+</head>
+<body>
+<h1>Welcome</h1>
+
+<form method="POST" th:action="@{/logout}" id="logoutForm">
+    <input type="submit" value="Logout"/>
+</form>
+
+<a th:href="@{/design}" id="design">Design a taco</a>
+</body>
+</html>
