@@ -1,0 +1,53 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+group = 'com.jayden'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+def httpClientVersion = '4.5.12'
+def logstashEncoderVersion = '6.4'
+def micrometerVersion = '1.5.3'
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+    // HttpClient
+    implementation("org.apache.httpcomponents:httpclient:${httpClientVersion}")
+
+    // Logstash Logback Encoder
+    compileOnly("net.logstash.logback:logstash-logback-encoder:${logstashEncoderVersion}")
+
+    // Micrometer
+    implementation("io.micrometer:micrometer-core:$micrometerVersion")
+    implementation("io.micrometer:micrometer-registry-statsd:$micrometerVersion")
+
+    compileOnly("org.projectlombok:lombok")
+    compileOnly("com.google.guava:guava:29.0-jre")
+    runtimeOnly("com.h2database:h2")
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+    annotationProcessor("org.projectlombok:lombok")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

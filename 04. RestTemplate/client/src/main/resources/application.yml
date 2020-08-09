@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: client
+
+management.metrics:
+  export:
+    statsd:
+      enabled: true
+      flavor: telegraf
+      polling-frequency: 5s
+  tags:
+    application: ${spring.application.name}
+    active: ${spring.profiles.active}
+
+---
+
+spring:
+  profiles: local, development
+
+---
+
+spring:
+  profiles: production
