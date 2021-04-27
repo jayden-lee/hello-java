@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-webflux-example
+  r2dbc:
+    url: r2dbc:mariadb://127.0.0.1:3306/testdb
+    username: root
+    password: admin007!
+    pool:
+      enabled: true
+      initial-size: 10
+      max-size: 30
+
+logging.level:
+  org.springframework.r2dbc: DEBUG

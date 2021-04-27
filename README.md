@@ -10,3 +10,4 @@
 - [04. RestTemplate](https://github.com/jayden-lee/hello-java/tree/master/04.%20RestTemplate)
 - [05. Spring Boot Monitoring](https://github.com/jayden-lee/hello-java/tree/master/05.%20Spring%20Boot%20Monitoring)
 - [06. MapStruct](https://github.com/jayden-lee/hello-java/tree/master/06.%20MapStruct)
+- [07. Spring Boot WebFlux](https://github.com/jayden-lee/hello-java/tree/master/07.%20Spring%20Boot%20WebFlux)
